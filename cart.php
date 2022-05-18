@@ -75,7 +75,7 @@ include './Layouts/navigasi.php';
       <!-- START: Judul Halaman Admin -->
       <div class="container-fuild">
          <div style="margin-top: 6.5rem;">
-            <h2>Cart Coffe Janji</h2>
+            <h2>Cart Kopi Janji</h2>
             <p class="mt-4" name="date">Tanggal&nbsp;&nbsp;<strong><?php echo date("m/d/Y"); ?></strong></p>
       </div>
    </div>
