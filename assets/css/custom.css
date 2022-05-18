@@ -71,6 +71,10 @@ i.fa-edit {
    color:rgb(255, 193, 7);
    cursor: pointer;
 }
+
+i.bi-exclamation-lg {
+   color: rgb(220, 53, 69);
+}
 /* END: Custom Icon */
 
 /* START: Slider */
