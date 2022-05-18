@@ -21,12 +21,6 @@
    <!-- CSS Custom -->
    <link rel="stylesheet" href="assets/css/custom.css" />
 
-   <!-- CSS Table Cart -->
-   <style>
-      th,tr,td {
-         border: 0;
-      }
-   </style>
 </head>
 
 <body>
