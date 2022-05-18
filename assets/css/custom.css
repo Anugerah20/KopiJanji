@@ -1,0 +1,241 @@
+/* Font Family Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+body, html{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Open Sans', sans-serif;
+}
+
+/* START: Custom Navbar */
+a.navbar-brand {
+   font-size: 25px;
+   font-weight: 700;
+   font-family: 'Rubik', sans-serif;
+   color: rgb(255, 74, 48)!important;
+}
+
+.navbar-nav .nav-item .nav-link{
+   font-size: 17px;
+   font-family: 'Rubik', sans-serif;
+   transition: 0.3 ease-in;
+}
+
+.navbar-nav .nav-item .nav-link:hover{
+   text-decoration: line-through;
+   color: rgb(255, 74, 48);
+}
+
+.btn-primary {
+   font-size: 17px;
+   font-family: 'Rubik', sans-serif;
+}
+
+/* .active a:hover {
+   text-decoration: line-through!important;
+   color: rgb(255, 74, 48)!important;
+} */
+/* END: Custom Navbar */
+
+/* START: Custom icon */
+i.fa-star {
+   color: rgb(255, 193, 7);
+}
+
+i.fa-cart-shopping {
+   color: #fff;
+}
+
+i.fa-shipping-fast {
+   font-size: 50px;
+   color: rgb(255, 74, 48);
+}
+
+i.fa-users {
+   font-size: 50px;
+   color: rgb(255, 74, 48);
+}
+
+i.fa-people-carry {
+   font-size: 50px;
+   color: rgb(255, 74, 48);
+}
+
+i.fa-trash-alt {
+   color: rgb(220, 53, 69);
+   cursor: pointer;
+} 
+
+i.fa-edit {
+   color:rgb(255, 193, 7);
+   cursor: pointer;
+}
+/* END: Custom Icon */
+
+/* START: Slider */
+.slide .carousel-item {
+   min-height: 100vh;
+   background-position: center;
+   background-size: cover;
+   position: relative;
+   z-index: 1;
+}
+
+.slide .carousel-item::before {
+   content: '';
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0,0,0,0.5);
+   z-index: -1;
+}
+
+.slide .carousel-item .container {
+   text-align: center;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+}
+
+.slide .carousel-item h5 {
+   font-size: 60px;
+   font-weight: 800;
+   margin: 0 0 10px;
+   color: rgb(255, 74, 48);
+   opacity: 0;
+}
+
+.slide .carousel-item p {
+   font-size: 30px;
+   font-weight: 400;
+   color: rgb(255,255,255);
+   opacity: 0;
+}
+
+button.login a{
+   color: #FFF!important;
+   text-decoration: none;
+} 
+
+div.disabled {
+   pointer-events: none;
+   user-select: none;
+   opacity: 0.5;
+   background: rgb(190, 190, 190);
+}
+
+/* Input */
+input[type="number"] {
+   width: 60px;
+   padding: 2px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+   margin-top: 6px;
+   outline: none;
+   text-align: center;
+   margin-bottom: 16px;
+}
+
+.slide .carousel-item.active h5 {
+   animation: fadeInLeft 0.4s ease forwards;
+}
+
+.slide .carousel-item.active p {
+   animation: fadeInRight 0.4s ease forwards;
+}
+
+@keyframes fadeInLeft {
+   0% {
+      opacity: 0;
+      transform: translateX(-30px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0px);
+   }
+}
+
+@keyframes fadeInRight {
+   0% {
+      opacity: 0;
+      transform: translateX(30px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0px);
+   }
+}
+
+
+/* END: Slider */
+
+/* START: Margin Top */
+.pelayanan,.kopi, .footer-menu {
+   margin-top: 6rem;
+}
+/* END: Margin Top */
+
+/* START: Footer */
+.footer-menu p {
+   font-size: 14px;
+   text-align: center;
+   font-family: 'Rubik', sans-serif;
+}
+
+.footer-menu a {
+   text-decoration: none;
+}
+/* END: Footer */
+
+/* START: Responsive Slider */
+@media(min-width: 1400px) {
+   .carousel-indicators {
+      display: none;
+   }
+}
+
+@media(min-width: 1200px) {
+   .carousel-indicators {
+      display: none;
+   }
+}
+
+@media(min-width: 992px) {
+   .carousel-indicators {
+      display: none;
+   }
+}
+
+@media(max-width: 768px) {
+   .carousel-control-prev,
+   .carousel-control-next,
+   .carousel-indicators {
+      display: none;
+   }
+
+   .slide .carousel-item h5 {
+      font-size: 40px;
+   }
+
+   .slide .carousel-item p {
+      font-size: 20px;
+   }
+}
+/* END: Responsive Slider */
+
+/* Login */
+.mt-card {
+   margin:9% auto;
+   @media(max-width: 576px) {
+      margin: 8% auto;
+   }
+}
+
+/* .form-text a {
+   text-decoration: none;
+} */
