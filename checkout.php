@@ -33,7 +33,7 @@
       <div class="container-fuild">
          <div style="margin-top: 3.5rem;">
             <h2>Konfirmasi Pemesanan</h2>
-            <small><i class="bi bi-exclamation-lg"></i><strong class="text-danger">PENTING</strong>&nbsp;isi data diri anda dengan benar</small>
+            <small><strong class="text-danger">PENTING<i class="bi bi-exclamation-lg"></i></strong>&nbsp;isi data diri anda dengan benar</small>
       </div>
    </div>
    <hr>
