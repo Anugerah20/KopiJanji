@@ -62,7 +62,6 @@ include './Layouts/navigasi.php';
 
    <!-- CSS Table Cart -->
    <style>
-
       th,tr,td {
          border: 0;
       }
