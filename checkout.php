@@ -15,6 +15,9 @@
    <!-- Link Fontawesome -->
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
+   <!-- Icon Bootstrap -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+
    <!-- Bootstrap 5 CSS -->
    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
@@ -29,7 +32,8 @@
       <!-- START: Judul Halaman Admin -->
       <div class="container-fuild">
          <div style="margin-top: 3.5rem;">
-            <h2>Checkout</h2>
+            <h2>Konfirmasi Pemesanan</h2>
+            <small><i class="bi bi-exclamation-lg"></i><strong class="text-danger">PENTING</strong>&nbsp;isi data diri anda dengan benar</small>
       </div>
    </div>
    <hr>
