@@ -58,7 +58,7 @@
 
          <div class="col-md-5 col-lg-5 mb-3">
             <div class="input-group">
-               <label for="email" class="input-group">Email anda</label>
+               <label for="email" class="input-group">Email</label>
                <input type="text" class="form-control" name="email" id="email" placeholder="Isi email anda" required>
             </div>
          </div>
