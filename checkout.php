@@ -114,7 +114,7 @@
 
          <div class="col-md-5 col-lg-5 mb-3">
             <div class="input-group">
-               <label for="kode" class="input-group">Kode unik</label>
+               <label for="kode" class="input-group">Kode Unik</label>
                <input type="text" class="form-control" name="kode" id="kode" placeholder="Kode unik anda" required>
             </div>
          </div>
