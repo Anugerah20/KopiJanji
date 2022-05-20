@@ -38,6 +38,95 @@
    </div>
    <hr>
 
+   <form action="" method="POST">
+      <div class="row">
+         <!-- Start Nama -->
+         <div class="col-md-5 col-lg-5 mb-3">
+            <div class="input-group">
+               <label for="nama" class="input-group">Nama anda</label>
+               <input type="text" class="form-control" name="nama" id="nama" placeholder="Isi nama anda" required>
+            </div>
+         </div>
+         <!-- End Nama -->
+
+         <div class="col-md-5 col-lg-5 mb-3">
+            <div class="input-group">
+               <label for="phone" class="input-group">No HP</label>
+               <input type="text" class="form-control" name="phone" id="phone" required>
+            </div>
+         </div>
+
+         <div class="col-md-5 col-lg-5 mb-3">
+            <div class="input-group">
+               <label for="email" class="input-group">Email anda</label>
+               <input type="text" class="form-control" name="email" id="email" placeholder="Isi email anda" required>
+            </div>
+         </div>
+
+         <div class="col-md-5 col-lg-5 mb-3">
+            <div class="input-group">
+               <label for="" class="input-group">Metode Pembayaran</label>
+               <select class="form-select" name="paymen">
+                  <option selected>-- Pilih Pembayaran --</option>
+                  <option value="cod">COD</option>
+                  <option value="gopay">Gopay</option>
+                  <option value="paypal">Paypal</option>
+                  <option value="bca">BCA</option>
+                  <option value="bri">BRI</option>
+               </select>
+            </div>
+         </div>
+
+         <div class="col-md-5 col-lg-5 mb-3">
+            <div class="input-group">
+               <label for="rumah" class="input-group">No Rumah</label>
+               <input type="text" class="form-control" name="rumah" id="rumah" placeholder="Isi no rumah anda" required>
+            </div>
+         </div>
+
+         <div class="col-md-5 col-lg-5 mb-3">
+            <div class="input-group">
+               <label for="alamat" class="input-group">Alamat rumah</label>
+               <input type="text" class="form-control" name="alamat" id="alamat" placeholder="Isi alamat rumah anda" required>
+            </div>
+         </div>
+
+         <div class="col-md-5 col-lg-5 mb-3">
+            <div class="input-group">
+               <label for="kota" class="input-group">Kota</label>
+               <input type="text" class="form-control" name="kota" id="kota" placeholder="Kota anda" required>
+            </div>
+         </div>
+
+         <div class="col-md-5 col-lg-5 mb-3">
+            <div class="input-group">
+               <label for="kabupaten" class="input-group">Kabupaten</label>
+               <input type="text" class="form-control" name="kabupaten" id="kabupaten" placeholder="Kabupaten anda" required>
+            </div>
+         </div>
+
+         <div class="col-md-5 col-lg-5 mb-3">
+            <div class="input-group">
+               <label for="negara" class="input-group">Negara</label>
+               <input type="text" class="form-control" name="negara" id="negara" placeholder="Negara anda" required>
+            </div>
+         </div>
+
+         <div class="col-md-5 col-lg-5 mb-3">
+            <div class="input-group">
+               <label for="kode" class="input-group">Kode unik</label>
+               <input type="text" class="form-control" name="kode" id="kode" placeholder="Kode unik anda" required>
+            </div>
+         </div>
+
+         <div class="">
+            <button type="submit" name="pesan_kopi" class="btn btn-primary" name="submit">Pesan Sekarang</button>
+         </div>
+
+      </div>
+   </form>
+   </div>
+
       
 </div>
         
