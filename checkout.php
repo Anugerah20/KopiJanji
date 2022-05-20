@@ -43,7 +43,7 @@
          <!-- Start Nama -->
          <div class="col-md-5 col-lg-5 mb-3">
             <div class="input-group">
-               <label for="nama" class="input-group">Nama anda</label>
+               <label for="nama" class="input-group">Nama</label>
                <input type="text" class="form-control" name="nama" id="nama" placeholder="Isi nama anda" required>
             </div>
          </div>
