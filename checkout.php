@@ -1,3 +1,5 @@
+<?php @include "./Layouts/config.php" ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,30 +33,49 @@
 
       <!-- START: Judul Halaman Admin -->
       <div class="container-fuild">
-         <div style="margin-top: 3.5rem;">
+         <div style="margin-top: 3rem;">
             <h2>Konfirmasi Pemesanan</h2>
             <small><strong class="text-danger">PENTING<i class="bi bi-exclamation-lg"></i></strong>&nbsp;isi data diri anda dengan benar</small>
          </div>
          <hr>
+      </div>
 
-         <!-- START: Menampilkan Pesanan Kopi -->
-         <div class="row">
-            <div class="col-md-4 mx-auto my-4">
-               <div class="card bg-success text-white">
-                  <div class="card-body">
-                     <h4 class="card-title text-center text-white text-uppercase">pesanan kopi kamu</h4>
-                     <hr>
-                     <div class="card-text text-center text-capitalize">
-                        <p>1. kopi janji (2x)</p>
-                        <p>2. kopi Susu (3x)</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
+      <!-- START: Menampilkan Pesanan Kopi -->
+      <div class="container">
+      <div class="row">
+         <div class="col-md-4 text-center text-white p-3 mx-auto bg-success rounded">
+            <h3 class="text-uppercase">pesanan kopi kamu</h3>
+            <hr>
+            <?php 
+            include "./Layouts/config.php";
+            session_start();
+            $user_id = $_SESSION['id'];
+            $query_cart = mysqli_query($db, "SELECT * FROM cart WHERE user_id = '$user_id'") or die($db);
+            $total = 0;
+            $grand_total = 0;
+
+            if(mysqli_num_rows($query_cart) > 0) {
+               while($checkout = mysqli_fetch_assoc($query_cart)) {
+                  $total_price = number_format($checkout['price_product'] * $checkout['quantity_product']);
+                  error_reporting(0);
+                  $grand_total = $total += $total_price;
+            ?>
+            <span><?= $checkout['name_product']; ?> (<?= $checkout['quantity_product'] ?>)</span>
+
+            <?php
+               }
+            } else {
+               echo "<h5 class='text-center'>Keranjang Kosong!</h5>";
+            }
+            ?>
+            <div class="mt-2 text-white"><strong>Total Harga Rp <?= $grand_total . ",000"; ?></strong></div>
          </div>
-         <!-- END:  Menampilkan Pesanan Kopi  -->
+      </div>
+      </div>
+      <!-- END:  Menampilkan Pesanan Kopi  -->
 
-         <form action="" method="POST">
+      <form action="" method="POST">
+         <div class="container mt-5">
             <div class="row">
                <!-- Start Nama -->
                <div class="col-md-5 col-lg-5 mb-3">
@@ -140,8 +161,7 @@
                </div>
 
             </div>
-         </form>
-      </div>
+      </form>
 
    </div>
    </div>
