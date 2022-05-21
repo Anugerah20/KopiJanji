@@ -39,14 +39,14 @@
 
          <!-- START: Menampilkan Pesanan Kopi -->
          <div class="row">
-            <div class="col-md-4 mx-auto my-3">
+            <div class="col-md-4 mx-auto my-4">
                <div class="card bg-success text-white">
                   <div class="card-body">
-                     <h4 class="card-title text-center">Pesanan kopi kamu</h4>
+                     <h4 class="card-title text-center text-white text-uppercase">pesanan kopi kamu</h4>
                      <hr>
-                     <div class="card-text text-center">
-                        <p>1. Kopi janji (2x)</p>
-                        <p>2. Kopi Susu (3x)</p>
+                     <div class="card-text text-center text-capitalize">
+                        <p>1. kopi janji (2x)</p>
+                        <p>2. kopi Susu (3x)</p>
                      </div>
                   </div>
                </div>
