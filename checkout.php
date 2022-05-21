@@ -65,14 +65,14 @@
 
          <div class="col-md-5 col-lg-5 mb-3">
             <div class="input-group">
-               <label for="" class="input-group">Metode Pembayaran</label>
-               <select class="form-select" name="paymen">
+               <label for="paymen" class="input-group">Metode Pembayaran</label>
+               <select class="form-select" name="paymen" id="paymen">
                   <option selected>-- Pilih Pembayaran --</option>
-                  <option value="cod">COD</option>
-                  <option value="gopay">Gopay</option>
-                  <option value="paypal">Paypal</option>
-                  <option value="bca">BCA</option>
-                  <option value="bri">BRI</option>
+                  <option value="COD">COD</option>
+                  <option value="Gopay">Gopay</option>
+                  <option value="Paypal">Paypal</option>
+                  <option value="BCA">BCA</option>
+                  <option value="BRI">BRI</option>
                </select>
             </div>
          </div>
