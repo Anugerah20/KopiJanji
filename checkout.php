@@ -143,8 +143,8 @@ if(isset($_POST['pesan_kopi'])) {
 
                <div class="col-md-5 col-lg-5 mb-3">
                   <div class="input-group">
-                     <label for="paymen" class="input-group">Metode Pembayaran</label>
-                     <select class="form-select" name="paymen" id="paymen">
+                     <label for="metode_pembayaran" class="input-group">Metode Pembayaran</label>
+                     <select class="form-select" name="metode_pembayaran" id="metode_pembayaran">
                         <option selected>-- Pilih Pembayaran --</option>
                         <option value="COD">COD</option>
                         <option value="Gopay">Gopay</option>
