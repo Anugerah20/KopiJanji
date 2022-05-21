@@ -37,6 +37,23 @@
          </div>
          <hr>
 
+         <!-- START: Menampilkan Pesanan Kopi -->
+         <div class="row">
+            <div class="col-md-4 mx-auto my-3">
+               <div class="card bg-success text-white">
+                  <div class="card-body">
+                     <h4 class="card-title text-center">Pesanan kopi kamu</h4>
+                     <hr>
+                     <div class="card-text text-center">
+                        <p>1. Kopi janji (2x)</p>
+                        <p>2. Kopi Susu (3x)</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- END:  Menampilkan Pesanan Kopi  -->
+
          <form action="" method="POST">
             <div class="row">
                <!-- Start Nama -->
