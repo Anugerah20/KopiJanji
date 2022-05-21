@@ -5,7 +5,7 @@
 if(isset($_POST['pesan_kopi'])) {
    $nam         = $_POST['nama'];
    $no_telepon    = $_POST['no_telepon'];
-   $email         = $_POST['email'];
+   $metode_pembayaran         = $_POST['metode_pembayaran'];
    $paymen        = $_POST['paymen'];
    $home          = $_POST['home'];
    $address       = $_POST['address'];
