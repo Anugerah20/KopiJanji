@@ -21,13 +21,12 @@ if(isset($_POST['pesan_kopi'])) {
       while($data_product = mysqli_fetch_assoc($cart_order)) {
          $product_name[] = $data_product['name_product'] . ' (' . $data_product['quantity_product'] . ' )';
          $product_price = number_format($data_product['price_product'] * $data_product['quantity_product']);
-         $product_total += $product_price;
-      };
-   };
+         $data = ((int) $product_total += (int)$product_price);
+      }
+   }
 
    $total_product = implode(',',$product_name);
-   $query_orders = mysqli_query($db, "INSERT INTO orders
-   nama, no_telepon, email, metode_pembayaran, no_rumah, alamat_rumah, kota, kabupaten, total_product, total_price) VALUES('$name', '$phone', '$email', '$paymen', '$home', '$address', '$city', '$district', '$total_product', '$product_total')") or die(mysqli_error($db));
+   $query_orders = mysqli_query($db, "INSERT INTO orders(nama, no_telepon, email, metode_pembayaran, no_rumah, alamat_rumah, kota, kabupaten, total_product, total_price) VALUES('$name', '$phone', '$email', '$paymen', '$home', '$address', '$city', '$district', '$data')");
 
    if($cart_order && $query_orders) {
       echo "<script>alert('Pesanan anda Sukses');</script>";
