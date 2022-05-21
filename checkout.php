@@ -120,7 +120,7 @@
          </div> -->
 
          <div class="">
-            <button type="submit" name="pesan_kopi" class="btn btn-primary" name="submit">Pesan Sekarang</button>
+            <button type="submit" name="pesan_kopi" class="btn btn-outline-secondary" name="submit">Pesan Sekarang</button>
          </div>
 
       </div>
