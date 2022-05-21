@@ -164,8 +164,8 @@ if(isset($_POST['pesan_kopi'])) {
 
                <div class="col-md-5 col-lg-5 mb-3">
                   <div class="input-group">
-                     <label for="address" class="input-group">Alamat Rumah</label>
-                     <input type="text" class="form-control" name="address" id="address" placeholder="Isi alamat rumah anda" required>
+                     <label for="alamat_rumah" class="input-group">Alamat Rumah</label>
+                     <input type="text" class="form-control" name="alamat_rumah" id="alamat_rumah" placeholder="Isi alamat rumah anda" required>
                   </div>
                </div>
 
