@@ -10,7 +10,7 @@ if(isset($_POST['pesan_kopi'])) {
    $no_rumah          = $_POST['no_rumah'];
    $alamat_rumah       = $_POST['alamat_rumah'];
    $kota          = $_POST['kota'];
-   $district      = $_POST['district'];
+   $kabupaten      = $_POST['kabupaten'];
 
    session_start();
    $user_id = $_SESSION['id'];
