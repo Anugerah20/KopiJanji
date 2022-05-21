@@ -20,7 +20,7 @@ if(isset($_POST['pesan_kopi'])) {
    if(mysqli_num_rows($cart_order) > 0) {
       while($data_product = mysqli_fetch_assoc($cart_order)) {
          $product_name[] = $data_product['name_product'] . ' (' . $data_product['quantity_product'] . ' )';
-         $product_price[] = number_format($data_product['price_product'] * $data_product['quantity_product']);
+         $product_price = number_format($data_product['price_product'] * $data_product['quantity_product']);
          $product_total += $product_price;
       };
    };
