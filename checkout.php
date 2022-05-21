@@ -34,102 +34,101 @@
          <div style="margin-top: 3.5rem;">
             <h2>Konfirmasi Pemesanan</h2>
             <small><strong class="text-danger">PENTING<i class="bi bi-exclamation-lg"></i></strong>&nbsp;isi data diri anda dengan benar</small>
-      </div>
-   </div>
-   <hr>
-
-   <form action="" method="POST">
-      <div class="row">
-         <!-- Start Nama -->
-         <div class="col-md-5 col-lg-5 mb-3">
-            <div class="input-group">
-               <label for="nama" class="input-group">Nama</label>
-               <input type="text" class="form-control" name="nama" id="nama" placeholder="Isi nama anda" required>
-            </div>
          </div>
-         <!-- End Nama -->
+         <hr>
 
-         <div class="col-md-5 col-lg-5 mb-3">
-            <div class="input-group">
-               <label for="phone" class="input-group">No Telepon</label>
-               <input type="text" class="form-control" name="phone" id="phone" placeholder="Isi nomor telepon" required>
-            </div>
-         </div>
+         <form action="" method="POST">
+            <div class="row">
+               <!-- Start Nama -->
+               <div class="col-md-5 col-lg-5 mb-3">
+                  <div class="input-group">
+                     <label for="nama" class="input-group">Nama</label>
+                     <input type="text" class="form-control" name="nama" id="nama" placeholder="Isi nama anda" required>
+                  </div>
+               </div>
+               <!-- End Nama -->
 
-         <div class="col-md-5 col-lg-5 mb-3">
-            <div class="input-group">
-               <label for="email" class="input-group">Email</label>
-               <input type="text" class="form-control" name="email" id="email" placeholder="Isi email anda" required>
-            </div>
-         </div>
+               <div class="col-md-5 col-lg-5 mb-3">
+                  <div class="input-group">
+                     <label for="phone" class="input-group">No Telepon</label>
+                     <input type="text" class="form-control" name="phone" id="phone" placeholder="Isi nomor telepon" required>
+                  </div>
+               </div>
 
-         <div class="col-md-5 col-lg-5 mb-3">
-            <div class="input-group">
-               <label for="paymen" class="input-group">Metode Pembayaran</label>
-               <select class="form-select" name="paymen" id="paymen">
-                  <option selected>-- Pilih Pembayaran --</option>
-                  <option value="COD">COD</option>
-                  <option value="Gopay">Gopay</option>
-                  <option value="Paypal">Paypal</option>
-                  <option value="BCA">BCA</option>
-                  <option value="BRI">BRI</option>
-               </select>
-            </div>
-         </div>
+               <div class="col-md-5 col-lg-5 mb-3">
+                  <div class="input-group">
+                     <label for="email" class="input-group">Email</label>
+                     <input type="text" class="form-control" name="email" id="email" placeholder="Isi email anda" required>
+                  </div>
+               </div>
 
-         <div class="col-md-5 col-lg-5 mb-3">
-            <div class="input-group">
-               <label for="rumah" class="input-group">No Rumah</label>
-               <input type="text" class="form-control" name="rumah" id="rumah" placeholder="Isi no rumah anda" required>
-            </div>
-         </div>
+               <div class="col-md-5 col-lg-5 mb-3">
+                  <div class="input-group">
+                     <label for="paymen" class="input-group">Metode Pembayaran</label>
+                     <select class="form-select" name="paymen" id="paymen">
+                        <option selected>-- Pilih Pembayaran --</option>
+                        <option value="COD">COD</option>
+                        <option value="Gopay">Gopay</option>
+                        <option value="Paypal">Paypal</option>
+                        <option value="BCA">BCA</option>
+                        <option value="BRI">BRI</option>
+                     </select>
+                  </div>
+               </div>
 
-         <div class="col-md-5 col-lg-5 mb-3">
-            <div class="input-group">
-               <label for="alamat" class="input-group">Alamat Rumah</label>
-               <input type="text" class="form-control" name="alamat" id="alamat" placeholder="Isi alamat rumah anda" required>
-            </div>
-         </div>
+               <div class="col-md-5 col-lg-5 mb-3">
+                  <div class="input-group">
+                     <label for="rumah" class="input-group">No Rumah</label>
+                     <input type="text" class="form-control" name="rumah" id="rumah" placeholder="Isi no rumah anda" required>
+                  </div>
+               </div>
 
-         <div class="col-md-5 col-lg-5 mb-3">
-            <div class="input-group">
-               <label for="kota" class="input-group">Kota</label>
-               <input type="text" class="form-control" name="kota" id="kota" placeholder="Kota anda" required>
-            </div>
-         </div>
+               <div class="col-md-5 col-lg-5 mb-3">
+                  <div class="input-group">
+                     <label for="alamat" class="input-group">Alamat Rumah</label>
+                     <input type="text" class="form-control" name="alamat" id="alamat" placeholder="Isi alamat rumah anda" required>
+                  </div>
+               </div>
 
-         <div class="col-md-5 col-lg-5 mb-3">
-            <div class="input-group">
-               <label for="kabupaten" class="input-group">Kabupaten</label>
-               <input type="text" class="form-control" name="kabupaten" id="kabupaten" placeholder="Kabupaten anda" required>
-            </div>
-         </div>
+               <div class="col-md-5 col-lg-5 mb-3">
+                  <div class="input-group">
+                     <label for="kota" class="input-group">Kota</label>
+                     <input type="text" class="form-control" name="kota" id="kota" placeholder="Kota anda" required>
+                  </div>
+               </div>
 
-         <!-- <div class="col-md-5 col-lg-5 mb-3">
+               <div class="col-md-5 col-lg-5 mb-3">
+                  <div class="input-group">
+                     <label for="kabupaten" class="input-group">Kabupaten</label>
+                     <input type="text" class="form-control" name="kabupaten" id="kabupaten" placeholder="Kabupaten anda" required>
+                  </div>
+               </div>
+
+               <!-- <div class="col-md-5 col-lg-5 mb-3">
             <div class="input-group">
                <label for="negara" class="input-group">Negara</label>
                <input type="text" class="form-control" name="negara" id="negara" placeholder="Negara anda" required>
             </div>
          </div> -->
 
-         <!-- <div class="col-md-5 col-lg-5 mb-3">
+               <!-- <div class="col-md-5 col-lg-5 mb-3">
             <div class="input-group">
                <label for="kode" class="input-group">Kode Unik</label>
                <input type="text" class="form-control" name="kode" id="kode" placeholder="Kode unik anda" required>
             </div>
          </div> -->
 
-         <div class="mb-5">
-            <button type="submit" name="pesan_kopi" class="btn btn-outline-secondary" name="submit">Pesan Sekarang</button>
-         </div>
+               <div class="mb-5">
+                  <button type="submit" name="pesan_kopi" class="btn btn-outline-secondary" name="submit">Pesan Sekarang</button>
+               </div>
 
+            </div>
+         </form>
       </div>
-   </form>
+
+   </div>
    </div>
 
-      
-</div>
-        
    <!-- Popper dan Bootstrap 5 JS -->
    <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
