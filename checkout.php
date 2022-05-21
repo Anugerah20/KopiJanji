@@ -25,10 +25,13 @@ if(isset($_POST['pesan_kopi'])) {
       }
    }
 
-   $total_product = implode(',',$product_name);
-   $query_orders = mysqli_query($db, "INSERT INTO orders(nama, no_telepon, email, metode_pembayaran, no_rumah, alamat_rumah, kota, kabupaten, total_product, total_price) VALUES('$name', '$phone', '$email', '$paymen', '$home', '$address', '$city', '$district', '$data')");
+   $total_product = implode(',', $product_name);
 
-   if($cart_order && $query_orders) {
+   $insert_order = mysqli_query($db, "INSERT INTO orders(user_id, name, phone, email, paymen, home, address, city, district, total_product, total_price) VALUES('$user_id', '$name', '$phone', '$email', '$paymen', '$home', '$address', '$city', '$district', '$total_product', '$data')");
+
+   // $order_result = mysqli_query($db, "INSERT INTO orders(nama, no_telepon, email, metode_pembayaran, no_rumah, alamat_rumah, kota, kabupaten, total_product, total_price) VALUES('$name', '$phone', '$email', '$paymen', '$home', '$address', '$city', '$district', '$data')");
+
+   if($cart_order && $order_result) {
       echo "<script>alert('Pesanan anda Sukses');</script>";
    } else {
       echo "<script>alert('Pesanan anda Gagal');</script>";
@@ -118,16 +121,16 @@ if(isset($_POST['pesan_kopi'])) {
                <!-- Start Name -->
                <div class="col-md-5 col-lg-5 mb-3">
                   <div class="input-group">
-                     <label for="name" class="input-group">Nama</label>
-                     <input type="text" class="form-control" name="name" id="name" placeholder="Isi nama anda" required>
+                     <label for="nama" class="input-group">Nama</label>
+                     <input type="text" class="form-control" name="nama" id="nama" placeholder="Isi nama anda" required>
                   </div>
                </div>
                <!-- End Name -->
 
                <div class="col-md-5 col-lg-5 mb-3">
                   <div class="input-group">
-                     <label for="phone" class="input-group">No Telepon</label>
-                     <input type="text" class="form-control" name="phone" id="phone" placeholder="Isi nomor telepon" required>
+                     <label for="no_telepon" class="input-group">No Telepon</label>
+                     <input type="text" class="form-control" name="no_telepon" id="no_telepon" placeholder="Isi nomor telepon" required>
                   </div>
                </div>
 
