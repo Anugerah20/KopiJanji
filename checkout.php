@@ -52,7 +52,7 @@
          <div class="col-md-5 col-lg-5 mb-3">
             <div class="input-group">
                <label for="phone" class="input-group">No Telepon</label>
-               <input type="text" class="form-control" name="phone" id="phone" required>
+               <input type="text" class="form-control" name="phone" id="phone" placeholder="Isi nomor telepon" required>
             </div>
          </div>
 
@@ -105,19 +105,19 @@
             </div>
          </div>
 
-         <div class="col-md-5 col-lg-5 mb-3">
+         <!-- <div class="col-md-5 col-lg-5 mb-3">
             <div class="input-group">
                <label for="negara" class="input-group">Negara</label>
                <input type="text" class="form-control" name="negara" id="negara" placeholder="Negara anda" required>
             </div>
-         </div>
+         </div> -->
 
-         <div class="col-md-5 col-lg-5 mb-3">
+         <!-- <div class="col-md-5 col-lg-5 mb-3">
             <div class="input-group">
                <label for="kode" class="input-group">Kode Unik</label>
                <input type="text" class="form-control" name="kode" id="kode" placeholder="Kode unik anda" required>
             </div>
-         </div>
+         </div> -->
 
          <div class="">
             <button type="submit" name="pesan_kopi" class="btn btn-primary" name="submit">Pesan Sekarang</button>
