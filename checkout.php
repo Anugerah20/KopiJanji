@@ -3,7 +3,14 @@
 
 // Membuat pesanan masuk
 if(isset($_POST['pesan_kopi'])) {
-   $nama = $_POST['nama'];
+   $name          = $_POST['name'];
+   $phone         = $_POST['phone'];
+   $email         = $_POST['email'];
+   $paymen        = $_POST['paymen'];
+   $home          = $_POST['home'];
+   $address       = $_POST['address'];
+   $city          = $_POST['city'];
+   $district      = $_POST['district'];
 }
 ?>
 
