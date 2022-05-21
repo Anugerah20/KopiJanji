@@ -178,8 +178,8 @@ if(isset($_POST['pesan_kopi'])) {
 
                <div class="col-md-5 col-lg-5 mb-3">
                   <div class="input-group">
-                     <label for="district" class="input-group">Kabupaten</label>
-                     <input type="text" class="form-control" name="district" id="district" placeholder="Kabupaten anda" required>
+                     <label for="kabupaten" class="input-group">Kabupaten</label>
+                     <input type="text" class="form-control" name="kabupaten" id="kabupaten" placeholder="Kabupaten anda" required>
                   </div>
                </div>
 
