@@ -9,7 +9,7 @@ if(isset($_POST['pesan_kopi'])) {
    $metode_pembayaran         = $_POST['metode_pembayaran'];
    $no_rumah          = $_POST['no_rumah'];
    $alamat_rumah       = $_POST['alamat_rumah'];
-   $city          = $_POST['city'];
+   $kota          = $_POST['kota'];
    $district      = $_POST['district'];
 
    session_start();
