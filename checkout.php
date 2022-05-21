@@ -1,4 +1,11 @@
-<?php @include "./Layouts/config.php" ?>
+<?php 
+@include "./Layouts/config.php";
+
+// Membuat pesanan masuk
+if(isset($_POST['pesan_kopi'])) {
+   $nama = $_POST['nama'];
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -77,14 +84,14 @@
       <form action="" method="POST">
          <div class="container mt-5">
             <div class="row">
-               <!-- Start Nama -->
+               <!-- Start Name -->
                <div class="col-md-5 col-lg-5 mb-3">
                   <div class="input-group">
-                     <label for="nama" class="input-group">Nama</label>
-                     <input type="text" class="form-control" name="nama" id="nama" placeholder="Isi nama anda" required>
+                     <label for="name" class="input-group">Nama</label>
+                     <input type="text" class="form-control" name="name" id="name" placeholder="Isi nama anda" required>
                   </div>
                </div>
-               <!-- End Nama -->
+               <!-- End Name -->
 
                <div class="col-md-5 col-lg-5 mb-3">
                   <div class="input-group">
@@ -116,29 +123,29 @@
 
                <div class="col-md-5 col-lg-5 mb-3">
                   <div class="input-group">
-                     <label for="rumah" class="input-group">No Rumah</label>
-                     <input type="text" class="form-control" name="rumah" id="rumah" placeholder="Isi no rumah anda" required>
+                     <label for="home" class="input-group">No Rumah</label>
+                     <input type="text" class="form-control" name="home" id="home" placeholder="Isi no rumah anda" required>
                   </div>
                </div>
 
                <div class="col-md-5 col-lg-5 mb-3">
                   <div class="input-group">
-                     <label for="alamat" class="input-group">Alamat Rumah</label>
-                     <input type="text" class="form-control" name="alamat" id="alamat" placeholder="Isi alamat rumah anda" required>
+                     <label for="address" class="input-group">Alamat Rumah</label>
+                     <input type="text" class="form-control" name="address" id="address" placeholder="Isi alamat rumah anda" required>
                   </div>
                </div>
 
                <div class="col-md-5 col-lg-5 mb-3">
                   <div class="input-group">
-                     <label for="kota" class="input-group">Kota</label>
-                     <input type="text" class="form-control" name="kota" id="kota" placeholder="Kota anda" required>
+                     <label for="city" class="input-group">Kota</label>
+                     <input type="text" class="form-control" name="city" id="city" placeholder="Kota anda" required>
                   </div>
                </div>
 
                <div class="col-md-5 col-lg-5 mb-3">
                   <div class="input-group">
-                     <label for="kabupaten" class="input-group">Kabupaten</label>
-                     <input type="text" class="form-control" name="kabupaten" id="kabupaten" placeholder="Kabupaten anda" required>
+                     <label for="district" class="input-group">Kabupaten</label>
+                     <input type="text" class="form-control" name="district" id="district" placeholder="Kabupaten anda" required>
                   </div>
                </div>
 
