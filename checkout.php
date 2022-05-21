@@ -8,7 +8,7 @@ if(isset($_POST['pesan_kopi'])) {
    $email        = $_POST['email'];
    $metode_pembayaran         = $_POST['metode_pembayaran'];
    $no_rumah          = $_POST['no_rumah'];
-   $address       = $_POST['address'];
+   $alamat_rumah       = $_POST['alamat_rumah'];
    $city          = $_POST['city'];
    $district      = $_POST['district'];
 
