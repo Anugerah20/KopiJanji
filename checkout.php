@@ -12,6 +12,9 @@ if(isset($_POST['pesan_kopi'])) {
    $city          = $_POST['city'];
    $district      = $_POST['district'];
 
+   session_start();
+   $user_id = $_SESSION['id'];
+
    $cart_order = mysqli_query($db, "SELECT * FROM cart WHERE user_id = '$user_id'");
    $product_total = 0;
    if(mysqli_num_rows($cart_order) > 0) {
