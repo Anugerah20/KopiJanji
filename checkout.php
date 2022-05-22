@@ -3,14 +3,14 @@
 
 // Membuat pesanan masuk
 if(isset($_POST['pesan_kopi'])) {
-   $nam         = $_POST['nama'];
-   $no_telepon    = $_POST['no_telepon'];
-   $email        = $_POST['email'];
-   $metode_pembayaran         = $_POST['metode_pembayaran'];
-   $no_rumah          = $_POST['no_rumah'];
-   $alamat_rumah       = $_POST['alamat_rumah'];
-   $kota          = $_POST['kota'];
-   $kabupaten      = $_POST['kabupaten'];
+   $name         = $_POST['name'];
+   $phone        = $_POST['phone'];
+   $email         = $_POST['email'];
+   $paymen       = $_POST['paymen'];
+   $home         = $_POST['home'];
+   $address      = $_POST['address'];
+   $city         = $_POST['city'];
+   $district     = $_POST['district'];
 
    session_start();
    $user_id = $_SESSION['id'];
@@ -27,9 +27,11 @@ if(isset($_POST['pesan_kopi'])) {
 
    $total_product = implode(',', $product_name);
 
-   $insert_order = mysqli_query($db, "INSERT INTO orders(user_id, name, phone, email, paymen, home, address, city, district, total_product, total_price) VALUES('$user_id', '$name', '$phone', '$email', '$paymen', '$home', '$address', '$city', '$district', '$total_product', '$data')");
+   
+   $order_result = mysqli_query($db, "INSERT INTO orders(nama, no_telepon, email, metode_pembayaran, no_rumah,alamat_rumah, kota,kabupaten, total_product, total_price) VALUES('$name','$phone','$email','$paymen','$home','$address','$city', '$district','$total_product','$product_total')");
 
-   // $order_result = mysqli_query($db, "INSERT INTO orders(nama, no_telepon, email, metode_pembayaran, no_rumah, alamat_rumah, kota, kabupaten, total_product, total_price) VALUES('$name', '$phone', '$email', '$paymen', '$home', '$address', '$city', '$district', '$data')");
+   // var_dump($order_result);
+   // exit;
 
    if($cart_order && $order_result) {
       echo "<script>alert('Pesanan anda Sukses');</script>";
@@ -121,16 +123,16 @@ if(isset($_POST['pesan_kopi'])) {
                <!-- Start Name -->
                <div class="col-md-5 col-lg-5 mb-3">
                   <div class="input-group">
-                     <label for="nama" class="input-group">Nama</label>
-                     <input type="text" class="form-control" name="nama" id="nama" placeholder="Isi nama anda" required>
+                     <label for="name" class="input-group">Nama</label>
+                     <input type="text" class="form-control" name="name" id="name" placeholder="Isi nama anda" required>
                   </div>
                </div>
                <!-- End Name -->
 
                <div class="col-md-5 col-lg-5 mb-3">
                   <div class="input-group">
-                     <label for="no_telepon" class="input-group">No Telepon</label>
-                     <input type="text" class="form-control" name="no_telepon" id="no_telepon" placeholder="Isi nomor telepon" required>
+                     <label for="phone" class="input-group">No Telepon</label>
+                     <input type="text" class="form-control" name="phone" id="phone" placeholder="Isi nomor telepon" required>
                   </div>
                </div>
 
@@ -143,8 +145,8 @@ if(isset($_POST['pesan_kopi'])) {
 
                <div class="col-md-5 col-lg-5 mb-3">
                   <div class="input-group">
-                     <label for="metode_pembayaran" class="input-group">Metode Pembayaran</label>
-                     <select class="form-select" name="metode_pembayaran" id="metode_pembayaran">
+                     <label for="paymen" class="input-group">Metode Pembayaran</label>
+                     <select class="form-select" name="paymen" id="paymen">
                         <option selected>-- Pilih Pembayaran --</option>
                         <option value="COD">COD</option>
                         <option value="Gopay">Gopay</option>
@@ -157,29 +159,29 @@ if(isset($_POST['pesan_kopi'])) {
 
                <div class="col-md-5 col-lg-5 mb-3">
                   <div class="input-group">
-                     <label for="no_rumah" class="input-group">No Rumah</label>
-                     <input type="text" class="form-control" name="no_rumah" id="no_rumah" placeholder="Isi no rumah anda" required>
+                     <label for="home" class="input-group">No Rumah</label>
+                     <input type="text" class="form-control" name="home" id="home" placeholder="Isi no rumah anda" required>
                   </div>
                </div>
 
                <div class="col-md-5 col-lg-5 mb-3">
                   <div class="input-group">
-                     <label for="alamat_rumah" class="input-group">Alamat Rumah</label>
-                     <input type="text" class="form-control" name="alamat_rumah" id="alamat_rumah" placeholder="Isi alamat rumah anda" required>
+                     <label for="address" class="input-group">Alamat Rumah</label>
+                     <input type="text" class="form-control" name="address" id="address" placeholder="Isi alamat rumah anda" required>
                   </div>
                </div>
 
                <div class="col-md-5 col-lg-5 mb-3">
                   <div class="input-group">
-                     <label for="kota" class="input-group">Kota</label>
-                     <input type="text" class="form-control" name="kota" id="kota" placeholder="Kota anda" required>
+                     <label for="city" class="input-group">Kota</label>
+                     <input type="text" class="form-control" name="city" id="city" placeholder="Kota anda" required>
                   </div>
                </div>
 
                <div class="col-md-5 col-lg-5 mb-3">
                   <div class="input-group">
-                     <label for="kabupaten" class="input-group">Kabupaten</label>
-                     <input type="text" class="form-control" name="kabupaten" id="kabupaten" placeholder="Kabupaten anda" required>
+                     <label for="district" class="input-group">Kabupaten</label>
+                     <input type="text" class="form-control" name="district" id="district" placeholder="Kabupaten anda" required>
                   </div>
                </div>
 
