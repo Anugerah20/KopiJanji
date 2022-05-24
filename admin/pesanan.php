@@ -58,6 +58,10 @@
             </tr>
          </tbody>
       </table>
+
+      <div>
+         <a href="admin.php" class="btn btn-success">Kembali</a>
+      </div>
    </div>
 
    <!-- Popper dan Bootstrap 5 JS -->
