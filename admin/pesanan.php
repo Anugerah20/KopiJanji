@@ -28,6 +28,24 @@
    </div>
    <!-- END: Tambah Produk -->
 
+   <div class="container">
+      <div class="table table-striped table-responsive">
+         <thead>
+            <tr>
+               <th scope="col">No</th>
+               <th scope="col">Nama</th>
+               <th scope="col">Email</th>
+               <th scope="col">Pembayaran</th>
+               <th scope="col">Alamat</th>
+               <th scope="col">Kota</th>
+               <th scope="col">Kapubaten</th>
+               <th scope="col">Produk</th>
+               <th scope="col">Harga</th>
+            </tr>
+         </thead>
+      </div>
+   </div>
+
    <!-- Popper dan Bootstrap 5 JS -->
    <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
