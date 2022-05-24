@@ -23,7 +23,7 @@
 <body>
    <!-- START: Tambah Produk -->
    <div class="container">
-      <h2 class="mt-5">pesanan masuk</h2>
+      <h2 class="mt-5 text-capitalize">pesanan masuk</h2>
       <hr>
    </div>
    <!-- END: Tambah Produk -->
