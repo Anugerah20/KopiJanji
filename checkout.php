@@ -3,14 +3,14 @@
 
 // Membuat pesanan masuk
 if(isset($_POST['pesan_kopi'])) {
-   $name         = $_POST['name'];
-   $phone        = $_POST['phone'];
-   $email         = $_POST['email'];
-   $paymen       = $_POST['paymen'];
-   $home         = $_POST['home'];
-   $address      = $_POST['address'];
-   $city         = $_POST['city'];
-   $district     = $_POST['district'];
+   $nama             = $_POST['nama'];
+   $telepon          = $_POST['telepon'];
+   $email            = $_POST['email'];
+   $pembayaran       = $_POST['pembayaran'];
+   $noRumah          = $_POST['no_rumah'];
+   $alamat           = $_POST['alamat'];
+   $kota             = $_POST['kota'];
+   $kabupaten        = $_POST['kabupaten'];
 
    session_start();
    $user_id = $_SESSION['id'];
@@ -19,24 +19,23 @@ if(isset($_POST['pesan_kopi'])) {
    $product_total = 0;
    if(mysqli_num_rows($cart_order) > 0) {
       while($data_product = mysqli_fetch_assoc($cart_order)) {
-         $product_name[] = $data_product['name_product'] . ' (' . $data_product['quantity_product'] . ' )';
+         $product_name[] = $data_product['name_product'] . ' ('. $data_product['quantity_product'] .' )';
          $product_price = number_format($data_product['price_product'] * $data_product['quantity_product']);
          $data = ((int) $product_total += (int)$product_price);
+         // $product_total += $product_price;
       }
    }
 
    $total_product = implode(',', $product_name);
 
-   
-   $order_result = mysqli_query($db, "INSERT INTO orders(nama, no_telepon, email, metode_pembayaran, no_rumah,alamat_rumah, kota,kabupaten, total_product, total_price) VALUES('$name','$phone','$email','$paymen','$home','$address','$city', '$district','$total_product','$product_total')");
-
-   // var_dump($order_result);
-   // exit;
+   $order_result = mysqli_query($db, "INSERT INTO orders (nama, telepon, email, pembayaran, no_rumah, alamat, kota, kabupaten, total_product, total_price) VALUES ('$nama', '$telepon', '$email', '$pembayaran', '$noRumah', '$alamat', '$kota', '$kabupaten', '$total_product', '$data')");
 
    if($cart_order && $order_result) {
-      echo "<script>alert('Pesanan anda Sukses');</script>";
+      echo "<script>alert('Pesanan kopi anda Sukses');</script>";
+      echo "<script>location='../index.php';</script>";
    } else {
       echo "<script>alert('Pesanan anda Gagal');</script>";
+      echo "<script>location='checkout.php';</script>";
    }
 }
 ?>
@@ -117,22 +116,22 @@ if(isset($_POST['pesan_kopi'])) {
       </div>
       <!-- END:  Menampilkan Pesanan Kopi  -->
 
-      <form action="" method="POST">
+      <form  method="POST">
          <div class="container mt-5">
             <div class="row">
                <!-- Start Name -->
                <div class="col-md-5 col-lg-5 mb-3">
                   <div class="input-group">
-                     <label for="name" class="input-group">Nama</label>
-                     <input type="text" class="form-control" name="name" id="name" placeholder="Isi nama anda" required>
+                     <label for="nama" class="input-group">Nama</label>
+                     <input type="text" class="form-control" name="nama" id="nama" placeholder="Isi nama anda" required>
                   </div>
                </div>
                <!-- End Name -->
 
                <div class="col-md-5 col-lg-5 mb-3">
                   <div class="input-group">
-                     <label for="phone" class="input-group">No Telepon</label>
-                     <input type="text" class="form-control" name="phone" id="phone" placeholder="Isi nomor telepon" required>
+                     <label for="telepon" class="input-group">No Telepon</label>
+                     <input type="text" class="form-control" name="telepon" id="telepon" placeholder="Isi nomor telepon" required>
                   </div>
                </div>
 
@@ -145,8 +144,8 @@ if(isset($_POST['pesan_kopi'])) {
 
                <div class="col-md-5 col-lg-5 mb-3">
                   <div class="input-group">
-                     <label for="paymen" class="input-group">Metode Pembayaran</label>
-                     <select class="form-select" name="paymen" id="paymen">
+                     <label for="pembayaran" class="input-group">Metode Pembayaran</label>
+                     <select class="form-select" name="pembayaran" id="pembayaran">
                         <option selected>-- Pilih Pembayaran --</option>
                         <option value="COD">COD</option>
                         <option value="Gopay">Gopay</option>
@@ -159,29 +158,29 @@ if(isset($_POST['pesan_kopi'])) {
 
                <div class="col-md-5 col-lg-5 mb-3">
                   <div class="input-group">
-                     <label for="home" class="input-group">No Rumah</label>
-                     <input type="text" class="form-control" name="home" id="home" placeholder="Isi no rumah anda" required>
+                     <label for="no_rumah" class="input-group">No Rumah</label>
+                     <input type="text" class="form-control" name="no_rumah" id="no_rumah" placeholder="Isi no rumah anda" required>
                   </div>
                </div>
 
                <div class="col-md-5 col-lg-5 mb-3">
                   <div class="input-group">
-                     <label for="address" class="input-group">Alamat Rumah</label>
-                     <input type="text" class="form-control" name="address" id="address" placeholder="Isi alamat rumah anda" required>
+                     <label for="alamat" class="input-group">Alamat Rumah</label>
+                     <input type="text" class="form-control" name="alamat" id="alamat" placeholder="Isi alamat rumah anda" required>
                   </div>
                </div>
 
                <div class="col-md-5 col-lg-5 mb-3">
                   <div class="input-group">
-                     <label for="city" class="input-group">Kota</label>
-                     <input type="text" class="form-control" name="city" id="city" placeholder="Kota anda" required>
+                     <label for="kota" class="input-group">Kota</label>
+                     <input type="text" class="form-control" name="kota" id="kota" placeholder="Kota anda" required>
                   </div>
                </div>
 
                <div class="col-md-5 col-lg-5 mb-3">
                   <div class="input-group">
-                     <label for="district" class="input-group">Kabupaten</label>
-                     <input type="text" class="form-control" name="district" id="district" placeholder="Kabupaten anda" required>
+                     <label for="kabupaten" class="input-group">Kabupaten</label>
+                     <input type="text" class="form-control" name="kabupaten" id="kabupaten" placeholder="Kabupaten anda" required>
                   </div>
                </div>
 
