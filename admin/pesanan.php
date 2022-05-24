@@ -53,7 +53,7 @@
                <td>jln.swadaya 4</td>
                <td>Tangesel</td>
                <td>Cilegon</td>
-               <td>Kopi cappucino (1)</td>
+               <td>Kopi cappucino (1x)</td>
                <td>30.000</td>
             </tr>
          </tbody>
