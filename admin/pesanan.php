@@ -29,7 +29,7 @@
    <!-- END: Tambah Produk -->
 
    <div class="container">
-      <div class="table table-striped table-responsive">
+      <table class="table table-striped table-responsive-sm table-responsive-md table-responsive-lg">
          <thead>
             <tr>
                <th scope="col">No</th>
@@ -43,7 +43,7 @@
                <th scope="col">Harga</th>
             </tr>
          </thead>
-      </div>
+      </table>
    </div>
 
    <!-- Popper dan Bootstrap 5 JS -->
