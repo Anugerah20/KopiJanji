@@ -43,6 +43,20 @@
                <th scope="col">Harga</th>
             </tr>
          </thead>
+
+         <tbody>
+            <tr>
+               <td>1</td>
+               <td>Mawar</td>
+               <td>mawar@gmail.com</td>
+               <td>BCA</td>
+               <td>jln.swadaya 4</td>
+               <td>Tangesel</td>
+               <td>Cilegon</td>
+               <td>Kopi cappucino (1)</td>
+               <td>30.000</td>
+            </tr>
+         </tbody>
       </table>
    </div>
 
