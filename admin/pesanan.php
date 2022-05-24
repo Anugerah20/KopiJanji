@@ -1,3 +1,12 @@
+<?php 
+@include "../Layouts/config.php";
+
+// Jika belum login tidak bisa masuk ke halaman ini
+if(!isset($_SESSION['role'])) {
+   header("Location: ../cart-error.php");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
