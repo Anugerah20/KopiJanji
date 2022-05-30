@@ -2,7 +2,7 @@
 @include "../Layouts/config.php";
 
 // Jika belum login tidak bisa masuk ke halaman ini
-if(!isset($_SESSION['role'])) {
+if($_SESSION['role'] == 'admin' ) {
    header("Location: ../cart-error.php");
 }
 ?>
