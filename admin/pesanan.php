@@ -72,7 +72,7 @@ if($_SESSION['role'] == 'admin' ) {
                <td><?= $r['kota']; ?></td>
                <td><?= $r['kabupaten']; ?></td>
                <td><?= $r['total_product']; ?></td>
-               <td><?= number_format($r['total_price']); ?></td>
+               <td><?= number_format($r['total_price']) . ".000"; ?></td>
             </tr>
          </tbody>
          <?php $number++; ?>
