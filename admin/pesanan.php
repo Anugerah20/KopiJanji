@@ -6,7 +6,9 @@ error_reporting(0);
 if($_SESSION['role'] == 'admin' ) {
    header("Location: ../cart-error.php");
 }
+
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -53,20 +55,28 @@ if($_SESSION['role'] == 'admin' ) {
                <th scope="col">Harga</th>
             </tr>
          </thead>
+         <?php 
+         include_once './Layouts/config.php';
+         $number = 1;
+         $query_pesanan = $db->query("SELECT nama,email,pembayaran,alamat,kota,kabupaten,total_product,total_price FROM orders");
+         while($r = $query_pesanan->fetch_assoc()) :
 
+         ?>
          <tbody>
             <tr>
-               <td>1</td>
-               <td>Mawar</td>
-               <td>mawar@gmail.com</td>
-               <td>BCA</td>
-               <td>jln.swadaya 4</td>
-               <td>Tangesel</td>
-               <td>Cilegon</td>
-               <td>Kopi cappucino (1x)</td>
-               <td>30.000</td>
+               <td><?= $number; ?></td>
+               <td><?= $r['nama']; ?></td>
+               <td><?= $r['email']; ?></td>
+               <td><?= $r['pembayaran']; ?></td>
+               <td><?= $r['alamat']; ?></td>
+               <td><?= $r['kota']; ?></td>
+               <td><?= $r['kabupaten']; ?></td>
+               <td><?= $r['total_product']; ?></td>
+               <td><?= number_format($r['total_price']); ?></td>
             </tr>
          </tbody>
+         <?php $number++; ?>
+         <?php endwhile; ?>
       </table>
 
       <div>
