@@ -14,4 +14,4 @@ Kopi Janji merupakan sebuah website  pemesanan kopi
 3. Edit data produk kopi
 4. Hapus data produk kopi
 5. Melihat produk kopi yang sudah ditambahkan
-6. Melihat status pesanan masuk (Masih dikerjakan)
+6. Melihat status pesanan masuk
