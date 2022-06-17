@@ -19,6 +19,11 @@ if(isset($_POST['register'])) {
 
    $result2 = mysqli_query($db, "INSERT INTO multilevel (email, username, password, name, role) VALUES ('$email', '$username', '$password', '$name', '$role')");
 
+   
+   if($result2) {
+      header("Location: login.php");
+   }
+
 }
 
 ?>
