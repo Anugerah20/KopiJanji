@@ -68,7 +68,7 @@ if(isset($_POST['register'])) {
                   <div class="card-body">
                      <h2 class="text-left">Register</h2>
                      <hr>
-                     <form action="success-register.php" method="POST">
+                     <form action="" method="POST">
 
                      <div class="col-md-12 mx-auto mb-4">
                            <label for="name" class="form-label">Name</label>
