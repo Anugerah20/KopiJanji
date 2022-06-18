@@ -1,9 +1,13 @@
 <?php 
 @include "../Layouts/config.php";
 
+// Mengaktifkan Session
+session_start();
+
 // Jika belum login tidak bisa masuk ke halaman ini
-if(!isset($_SESSION['role'])) {
+if($_SESSION['role'] !== 'admin'){
    header("Location: ../cart-error.php");
+   exit();
 }
 ?>
 
@@ -11,8 +15,6 @@ if(!isset($_SESSION['role'])) {
 // Menghubungkan ke database
 include '../Layouts/config.php';
 
-// Mengaktifkan Session
-session_start();
 
 // Membuat random string
 // agar nama file foto tidak sama
