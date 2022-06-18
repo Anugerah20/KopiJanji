@@ -1,7 +1,13 @@
 <?php
+@include "../Layouts/config.php";
+
+// Mengaktifkan Session
+session_start();
+
 // Jika belum login tidak bisa masuk ke halaman ini
-if(!isset($_SESSION['role'])) {
+if($_SESSION['role'] !== 'admin') {
    header("Location: ../cart-error.php");
+   exit();
 }
 ?>
 
