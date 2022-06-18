@@ -14,7 +14,7 @@ session_start();
 
 // Jika bukan admin maka tidak bisa masuk ke halaman ini
 if($_SESSION['role'] != 'admin') {
-   header("Location: ../admin.php");
+   header("Location: ../login.php");
    exit();
 }
 
