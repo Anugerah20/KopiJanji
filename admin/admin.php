@@ -93,7 +93,7 @@ if(isset($name)) {
                   <td>Rp&nbsp;<?=  number_format($row['price_product']); ?></td>
                   <td><img width="80" src="../assets/fotoProduk/<?= $row['image_product']; ?>"></td>
                   <td>
-                     <a class="pe-3" href="delete.php?id=<?= $row['id']; ?>" onclick="return confirm('Anda mau hapus produk ini?')"><i class="fas fa-trash-alt"></i></a>
+                     <a class="pe-3" href="delete.php?id=<?= $row['id']; ?>" onclick="return confirm('Anda mau hapus produk ini?')"><i class="fa fa-trash"></i></a>
 
                     <a href="edit.php?id=<?= $row['id']; ?>"><i class="fa fa-edit"></i></a>
                   </td>
