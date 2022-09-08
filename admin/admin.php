@@ -107,10 +107,10 @@ if(isset($name)) {
             <div class="card mt-5">
                <ul class="list-group list-group-flush">
                   <li class="list-group-item">
-                     <h4>
-                     <i class="fas fa-user"></i>&nbsp;&nbsp;Welcome 
+                     <h5>
+                     <i class="fa fa-user"></i>&nbsp;&nbsp;Selamat datang, 
                      <?php echo $_SESSION['name']; ?> admin
-                     </h4>
+                     </h5>
                   </li>
                   <li class="list-group-item">
                      <a href="admin.php" style="text-decoration: none;"><i class="fa fa-coffee"></i>&nbsp;&nbsp;Produk Kopi</a>
