@@ -116,7 +116,7 @@ if(isset($name)) {
                      <a href="admin.php" style="text-decoration: none;"><i class="fa fa-coffee"></i>&nbsp;&nbsp;Produk Kopi</a>
                   </li>
                   <li class="list-group-item">
-                     <a href="pesanan.php" style="text-decoration: none;"><i class="fas fa-check-square"></i>&nbsp;&nbsp;Pesanan Masuk</a>
+                     <a href="pesanan.php" style="text-decoration: none;"><i class="fa fa-check-square"></i>&nbsp;&nbsp;Pesanan Masuk</a>
                   </li>
                   <li class="list-group-item">
                      <a href="../logout.php" style="text-decoration: none;"><i class="fas fa-sign-out-alt"></i>&nbsp;&nbsp;Keluar</a>
