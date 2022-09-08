@@ -12,7 +12,7 @@
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card text-dark bg-light mb-3">
           <div class="card-body text-center">
-            <i class="fa fa-people-carry"></i>
+            <i class="fa fa-bullhorn"></i>
             <h5 class="card-title">buatan lokal</h5>
             <p class="card-text">
               biji kopi ini dibuat oleh petani lokal indonesia yang sudah berpengalaman di bidangnya.</p>
