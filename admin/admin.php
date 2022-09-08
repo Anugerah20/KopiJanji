@@ -113,7 +113,7 @@ if(isset($name)) {
                      </h4>
                   </li>
                   <li class="list-group-item">
-                     <a href="admin.php" style="text-decoration: none;"><i class="fas fa-coffee"></i>&nbsp;&nbsp;Produk Kopi</a>
+                     <a href="admin.php" style="text-decoration: none;"><i class="fa fa-coffee"></i>&nbsp;&nbsp;Produk Kopi</a>
                   </li>
                   <li class="list-group-item">
                      <a href="pesanan.php" style="text-decoration: none;"><i class="fas fa-check-square"></i>&nbsp;&nbsp;Pesanan Masuk</a>
