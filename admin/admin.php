@@ -95,7 +95,7 @@ if(isset($name)) {
                   <td>
                      <a class="pe-3" href="delete.php?id=<?= $row['id']; ?>" onclick="return confirm('Anda mau hapus produk ini?')"><i class="fas fa-trash-alt"></i></a>
 
-                    <a href="edit.php?id=<?= $row['id']; ?>"><i class="far fa-edit"></i></a>
+                    <a href="edit.php?id=<?= $row['id']; ?>"><i class="fa fa-edit"></i></a>
                   </td>
                </tbody>
                <?php $number++; ?>
