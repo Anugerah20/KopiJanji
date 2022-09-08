@@ -2,7 +2,7 @@
 <footer>
     <div class="container">
       <div class="footer-menu">
-        <p>janji kopi - build by <a href="https://google.com/" target="_blank">nabil anugerah</a></p>
+        <p>janji kopi - build by <a href="https://github.com/Anugerah20" target="_blank">nabil anugerah</a></p>
       </div>
     </div>
   </footer>
