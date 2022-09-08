@@ -68,7 +68,7 @@ if (isset($_POST['add_cart'])) {
                 <input type="hidden" name="name" value=" <?= $row['name_product']; ?>">
                 <input type="hidden" name="price" value="<?= $row['price_product']; ?>">
                 <input type="hidden" name="image" value="<?= $row['image_product']; ?>">
-                <div class="float-end mt-1"><i class="fas fa-star"></i>&nbsp;4.8</div>
+                <div class="float-end mt-1"><i class="fa fa-star"></i>&nbsp;4.8</div>
                 <!-- START: Add Product -->
 
                 <?php
