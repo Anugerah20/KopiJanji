@@ -39,7 +39,9 @@ if(isset($name)) {
    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
    
    <!-- Link Fontawesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
    <!-- CSS Custom -->
    <link rel="stylesheet" href="/assets/css/custom.css" />
@@ -65,7 +67,7 @@ if(isset($name)) {
       <div class="row">
          <div class="col-md-7">
             <!-- START: Tambah Produk Kopi -->
-            <a class="btn btn-outline" href="create.php"><i class="far fa-plus-square"></i>&nbsp;Tambah Produk</a>
+            <a class="btn btn-outline" href="create.php"><i class="fas fa-plus-square"></i>&nbsp;Tambah Produk</a>
             <!-- END: Tambah Produk Kopi -->
             <table class="table table-responsive text-center mt-5" style="border: none;">
                <thead>
