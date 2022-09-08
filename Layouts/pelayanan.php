@@ -35,7 +35,7 @@
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card text-dark bg-light mb-3">
           <div class="card-body text-center">
-            <i class="fa fa-shipping"></i>
+            <i class="fa fa-shipping-fast"></i>
             <h5 class="card-title">gratis antar</h5>
             <p class="card-text">kami menyediakan gratis mengantar pesanan kopi janji khusus wilayah tangerang.</p>
           </div>
