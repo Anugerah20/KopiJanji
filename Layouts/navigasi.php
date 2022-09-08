@@ -65,9 +65,9 @@ error_reporting(0);
             ?>
             <a class="nav-link" href="cart.php">
               <?php if(!isset($_SESSION['role'])) { ?>
-                <i class="fas fa-shopping-cart">&nbsp;<span class="badge bg-secondary">0</span></i>
+                <i class="fa fa-shopping-cart">&nbsp;<span class="badge bg-secondary">0</span></i>
               <?php } else { ?>
-                <i class="fas fa-shopping-cart">&nbsp;<span class="badge bg-secondary"><?= $row_cart; ?></span></i>
+                <i class="fa fa-shopping-cart">&nbsp;<span class="badge bg-secondary"><?= $row_cart; ?></span></i>
               <?php
                  } 
               ?>
