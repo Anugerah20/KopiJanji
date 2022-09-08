@@ -67,7 +67,7 @@ if(isset($name)) {
       <div class="row">
          <div class="col-md-7">
             <!-- START: Tambah Produk Kopi -->
-            <a class="btn btn-outline" href="create.php"><i class="fas fa-plus-square"></i>&nbsp;Tambah Produk</a>
+            <a class="btn btn-outline" href="create.php"><i class="fa fa-plus-square"></i>&nbsp;Tambah Produk</a>
             <!-- END: Tambah Produk Kopi -->
             <table class="table table-responsive text-center mt-5" style="border: none;">
                <thead>
